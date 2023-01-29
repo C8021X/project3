@@ -1,0 +1,346 @@
+@use "reset";
+@use "colors";
+@use "settings";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+}
+
+.first-color,
+.fa-icicles {
+	color: colors.$first-color;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.top-hero {
+	position: relative;
+	height: 200px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.top-hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 3.6rem;
+	text-transform: uppercase;
+}
+
+// NAV - START
+
+nav {
+	.nav-link {
+		font-size: 2rem;
+	}
+	.navbar-brand {
+		font-size: 2.4rem;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+	.navbar-toggler {
+		font-size: 2.6rem;
+	}
+}
+
+// NAV - STOP
+
+// HEADER - START
+
+header {
+	font-size: 2rem;
+	.carousel-item {
+		position: relative;
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+	}
+	.carousel-img-one {
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+			),
+			url("../img/main-carousel-1.jpg");
+	}
+	.carousel-img-two {
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+			),
+			url("../img/main-carousel-2.jpg");
+	}
+	.carousel-img-three {
+		background-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+				rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+			),
+			url("../img/main-carousel-3.jpg");
+	}
+}
+
+// HEADER - STOP
+
+// MAIN (FIRST SECTION) - START
+main {
+	.firstSection {
+		i {
+			font-size: 4rem;
+		}
+		p {
+			margin: 0;
+		}
+		p:first-of-type {
+			font-size: 2.2rem;
+		}
+	}
+}
+// MAIN (FIRST SECTION) - STOP
+
+// MAIN (SECOND SECTION) - START
+main {
+	.secondSection {
+		color: colors.$white-color;
+		.img-bg {
+			height: 350px;
+			background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-1-hq.jpg");
+			background-position: center;
+			background-size: cover;
+		}
+	}
+}
+// MAIN (SECOND SECTION) - STOP
+
+// MAIN (THIRD SECTION) - START
+main {
+	.thirdSection {
+		h3 {
+			font-size: 3rem;
+			font-weight: bold;
+		}
+	}
+}
+// MAIN (THIRD SECTION) - STOP
+
+// FOOTER - START
+footer {
+	font-size: 1.6rem;
+	text-transform: capitalize;
+}
+// FOOTER - STOP
+
+// ABOUT US - START
+.aboutus-hero {
+	background-image: url("../img/aboutus/way.jpg");
+	background-position: bottom;
+}
+
+.aboutus-subpage {
+	.diamont-card {
+		background-color: rgb(248, 248, 248);
+		box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.7);
+		p:first-of-type {
+			text-transform: uppercase;
+			text-decoration: underline;
+			text-decoration-color: colors.$first-color;
+			text-decoration-thickness: 2px;
+			font-weight: bold;
+			font-size: 2.8rem;
+		}
+		.main-img {
+			position: relative;
+			width: 100%;
+			height: 350px;
+			background-image: url("../img/aboutus/engine.jpg");
+			background-position: center;
+			background-size: cover;
+		}
+	}
+}
+
+.six-card {
+	color: colors.$white-color;
+	i {
+		padding: 1em;
+		font-size: 3.2rem;
+		color: colors.$white-color;
+	}
+	.row {
+		p {
+			margin: 0;
+		}
+		p:first-of-type {
+			font-weight: bold;
+			font-size: 2rem;
+		}
+	}
+}
+// ABOUT US - STOP
+
+// SERVICES - START
+.services-hero {
+	background-image: url("../img/services/car.jpg");
+	background-position: 0 75%;
+}
+
+.acard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	font-size: 2.5rem;
+}
+
+.acard-1 {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/services/engine.jpg");
+}
+
+.acard-2 {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/services/visual.jpg");
+}
+
+.acard-3 {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/services/car-audio.jpg");
+}
+
+.acard-4 {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../img/services/allinone.jpg");
+}
+// SERVICES - STOP
+
+// PROJECTS - START
+.projects-hero {
+	background-image: url("../img/projects/project-hero.jpg");
+	background-position: center;
+}
+
+.card-img-top {
+	height: 200px;
+	object-fit: cover;
+}
+
+.card {
+	.btn-outline-dark:hover {
+		border-color: colors.$first-color;
+		background-color: colors.$first-color;
+	}
+	.card-footer {
+		background-color: colors.$white-color;
+		border-top: none;
+	}
+}
+
+.card-group > .card + .card {
+	border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+// PROJECTS - STOP
+
+// CONTACT - START
+.contact-hero {
+	background-image: url("../img/contact/shelby.jpg");
+	background-position: center;
+}
+
+.data {
+	h1,
+	h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2,
+	textarea {
+		font-size: 1.6rem;
+	}
+	p {
+		margin: 0.2em;
+	}
+	input,
+	select {
+		height: 3em;
+		font-size: 1.6rem;
+	}
+	.bigcard {
+		padding: 2.5em;
+	}
+	.btn {
+		font-size: 1.4rem;
+	}
+}
+// CONTACT - STOP
+
+// @MEDIA
+@media (min-width: 992px) {
+	.aboutus-subpage {
+		.diamont-card {
+			.row {
+				transform: skew(-12deg);
+			}
+		}
+	}
+	.data {
+		h1 {
+			font-size: 2.6rem;
+		}
+		h2 {
+			font-size: 2.2rem;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	header {
+		.carousel-item {
+			height: 600px;
+		}
+		.carousel-img-one {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+				),
+				url("../img/main-carousel-1-hq.jpg");
+		}
+		.carousel-img-two {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+				),
+				url("../img/main-carousel-2-hq.jpg");
+		}
+		.carousel-img-three {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity),
+					rgba(0, 0, 0, settings.$header-carousel-img-opacity)
+				),
+				url("../img/main-carousel-3-hq.jpg");
+		}
+	}
+}

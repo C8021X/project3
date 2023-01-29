@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+.first-color,
+.fa-icicles {
+  color: #2162fc;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.top-hero {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  z-index: 0;
+}
+
+.top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+nav .nav-link {
+  font-size: 2rem;
+}
+nav .navbar-brand {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav .navbar-toggler {
+  font-size: 2.6rem;
+}
+
+header {
+  font-size: 2rem;
+}
+header .carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+header .carousel-img-one {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-1.jpg");
+}
+header .carousel-img-two {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-2.jpg");
+}
+header .carousel-img-three {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-3.jpg");
+}
+
+main .firstSection i {
+  font-size: 4rem;
+}
+main .firstSection p {
+  margin: 0;
+}
+main .firstSection p:first-of-type {
+  font-size: 2.2rem;
+}
+
+main .secondSection {
+  color: #fff;
+}
+main .secondSection .img-bg {
+  height: 350px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-1-hq.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main .thirdSection h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+footer {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.aboutus-hero {
+  background-image: url("../img/aboutus/way.jpg");
+  background-position: bottom;
+}
+
+.aboutus-subpage .diamont-card {
+  background-color: rgb(248, 248, 248);
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.7);
+}
+.aboutus-subpage .diamont-card p:first-of-type {
+  text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2162fc;
+          text-decoration-color: #2162fc;
+  text-decoration-thickness: 2px;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+.aboutus-subpage .diamont-card .main-img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/aboutus/engine.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.six-card {
+  color: #fff;
+}
+.six-card i {
+  padding: 1em;
+  font-size: 3.2rem;
+  color: #fff;
+}
+.six-card .row p {
+  margin: 0;
+}
+.six-card .row p:first-of-type {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.services-hero {
+  background-image: url("../img/services/car.jpg");
+  background-position: 0 75%;
+}
+
+.acard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  font-size: 2.5rem;
+}
+
+.acard-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/services/engine.jpg");
+}
+
+.acard-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/services/visual.jpg");
+}
+
+.acard-3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/services/car-audio.jpg");
+}
+
+.acard-4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/services/allinone.jpg");
+}
+
+.projects-hero {
+  background-image: url("../img/projects/project-hero.jpg");
+  background-position: center;
+}
+
+.card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .btn-outline-dark:hover {
+  border-color: #2162fc;
+  background-color: #2162fc;
+}
+.card .card-footer {
+  background-color: #fff;
+  border-top: none;
+}
+
+.card-group > .card + .card {
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.contact-hero {
+  background-image: url("../img/contact/shelby.jpg");
+  background-position: center;
+}
+
+.data h1,
+.data h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.data h1 {
+  font-size: 2rem;
+}
+.data h2,
+.data textarea {
+  font-size: 1.6rem;
+}
+.data p {
+  margin: 0.2em;
+}
+.data input,
+.data select {
+  height: 3em;
+  font-size: 1.6rem;
+}
+.data .bigcard {
+  padding: 2.5em;
+}
+.data .btn {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 992px) {
+  .aboutus-subpage .diamont-card .row {
+    transform: skew(-12deg);
+  }
+  .data h1 {
+    font-size: 2.6rem;
+  }
+  .data h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  header .carousel-item {
+    height: 600px;
+  }
+  header .carousel-img-one {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-1-hq.jpg");
+  }
+  header .carousel-img-two {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-2-hq.jpg");
+  }
+  header .carousel-img-three {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/main-carousel-3-hq.jpg");
+  }
+}/*# sourceMappingURL=main.css.map */
